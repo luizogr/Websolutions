@@ -1,0 +1,198 @@
+/* Reset básico e configurações do body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    /* Adicionado para o rodapé */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between; /* Alinha logo e nav */
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #222;
+}
+
+header h1 {
+    font-size: 2.5rem; /* 40px */
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo-web {
+    color: #888888;
+    font-weight: 500;
+}
+
+.logo-solutions {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Navegação do Cabeçalho */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem; /* 17.6px */
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+header nav a:hover {
+    color: #bbbbbb;
+}
+
+/* Estilo do link ativo */
+header nav a.active {
+    font-weight: 700;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Layout Principal (Sidebar + Conteúdo) */
+.main-layout {
+    display: flex;
+    flex: 1; /* Faz o layout principal ocupar o espaço restante */
+}
+
+/* Barra Lateral */
+.sidebar {
+    width: 120px;
+    background-color: #111111;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar h2 {
+    font-size: 1.8rem; /* 28px */
+    color: #777;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+/* Conteúdo Principal */
+.content {
+    flex: 1;
+    padding: 40px 60px;
+}
+
+.content h2 {
+    font-size: 2.2rem; /* 35px */
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #eeeeee;
+}
+
+/* Estilo para a página "Sobre" */
+.content p {
+    font-size: 1.1rem; /* 17.6px */
+    line-height: 1.7;
+    color: #dddddd;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a página "Projetos" */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-card {
+    border: 2px solid #ffffff;
+    width: 300px;
+}
+
+.project-image-placeholder {
+    height: 220px;
+    /* Apenas um placeholder visual */
+    background-color: #000; 
+}
+
+.project-card p {
+    font-size: 1.2rem; /* 19.2px */
+    font-weight: 600;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px;
+    margin: 0; /* Reseta a margem do <p> da página "Sobre" */
+    max-width: 100%; /* Reseta a largura máxima */
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #0a0a0a;
+    border-top: 1px solid #222;
+    padding: 40px 60px 20px 60px;
+    /* margin-top: auto; (Não é mais necessário com flex no body) */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-content h3 {
+    font-size: 1.3rem; /* 20.8px */
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #bbbbbb;
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav li {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #777;
+    font-size: 0.9rem; /* 14.4px */
+}
